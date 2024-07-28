@@ -1,0 +1,135 @@
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title> calendar </title>
+<a href=HomePage.html ><img src="logo.jpeg" alt="logo" class="logo"></a>
+
+	<link href= "GP.css" rel="stylesheet" type="text/css" />
+
+   <div class="container">
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="favorite.html">Favorite</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="contactUs.html">Contact Us </a></li>
+        </ul>
+    </nav>
+  </div>
+  <br><br>
+
+
+  <meta charset='utf-8' />
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
+ 
+  <div id='calendar'></div>
+
+<style>
+
+  /* Calendar container */
+  #calendar {
+    max-width: 800px;
+    margin: 0 auto;
+	background-color:f9f9f9;
+  }
+
+  /* Button styles */
+  .fc-button {
+    background-color: #00747f;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px;
+    cursor: pointer;
+  }
+
+  /* Event styles */
+  .fc-event {
+    background-color: #28a745;
+    color: #fff;
+  }
+
+  /* Event title styles */
+  .fc-title {
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+ <script>
+    $(document).ready(function() {      
+
+      $('#calendar').fullCalendar({
+
+        events: [
+          {
+            title: 'يوم التأسيس',
+            start: '2024-02-22',
+            end: '2024-02-23'
+          },
+          {
+            title: 'يوم برايل',
+            start: '2024-01-02',
+            end: '2024-01-03'
+          },
+		  {
+            title: 'استخدام برنامج Nvivo لتنظيم الدراسات السابقة وللتحليل النوعي',
+            start: '2024-01-24',
+            end: '2024-01-26'
+          },
+		  
+		    {
+            title: 'آلية النشر المصنف للعلوم الإنسانية',
+            start: '2024-12-13',
+            end: '2024-12-14'
+          },
+		  
+          {
+            title: 'تقديم المرقوق بطريقة حديثة',
+            start: '2024-02-28',
+            end: '2024-02-29'
+          },
+
+           {
+            title: 'تزيين الكب كيك',
+            start: '2024-12-04',
+            end: '2024-12-05'
+          },
+        ],
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,agendaWeek,agendaDay'
+        },
+
+        customButtons: {
+          cancel: {
+            text: 'Cancel',
+            click: function() {
+
+            }
+          },
+          choose: {
+            text: 'Choose',
+            click: function() {
+
+            }
+          }
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>

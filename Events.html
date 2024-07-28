@@ -1,0 +1,331 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+    <title>Events</title>
+    <a href="HomePage.html"><img src="logo.jpeg" alt="logo" class="logo"></a>
+
+    <link href="GP.css" rel="stylesheet" type="text/css" />
+    <style>
+	
+	.Cards{
+	margin:4px;
+	padding:4px;
+	
+	}
+            .event-card {
+            width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .event-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .event-info {
+            text-align: center;
+        }
+
+        .event-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .event-button {
+            padding: 6px 12px;
+            background-color: #00747f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .event-button:hover {
+            background-color: #808080;
+        }
+h1 {
+  text-align: center;
+  color:#00747f;
+}
+
+.filter-container{
+        color: #00747f;
+        
+}
+#category-filter {
+        color: #00747f;
+        background-color: #fff;
+        border: 1px solid #00747f;
+        padding: 5px;
+        border-radius: 4px;
+    
+    </style>
+</head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+    
+
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a>
+                <ul class="dropdown-menu">
+                    <li><a href="loginRegistration.html">LogIn</a></li>
+                    <li><a href="loginRegistration.html">Registration</a></li>
+                </ul>
+            </li>
+            <li><a href="Events.html">Events
+			 <ul class="dropdown-menu">
+                    <li><a href="CreateEvent.html">CreateEvent</a></li>
+					</ul>
+			</a></li>
+            <li><a href="favorite.html">Favorite</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+        </ul>
+        <img src="logo.jpeg" class="logo">
+    </nav>
+</div>
+  
+  
+	
+	
+	
+    
+        <br><br>
+		              <h1>Events</h1>
+					  
+					  
+					  
+					  <br>
+					 
+   <div class="filter-container">
+    <label for="category-filter">Filter by Category:</label>
+    <select id="category-filter">
+        <option value="all">All</option>
+        <option value="sports">Sports</option>
+        <option value="conferences">Conferences</option>
+        <option value="community">Community</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="workshops">Workshops</option>
+        <option value="national-days">National Days</option>
+    </select>
+</div>
+		
+		
+		<div class = "Cards">
+		
+      <div class="event-card" data-category="national-days" >
+        <img src="FoundationDay-.png" alt="Event Image" class="event-image">
+        <div class="event-info" >
+            <h2>تراثنا هويتنا  </h2>
+            <p>NationalDays </p>
+
+            <div class="event-buttons">
+                <a href="Foundationday-.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+       
+      <div class="event-card" id="event1" data-category="national-days" >
+        <img src="Event1.jpg" alt="Event Image" class="event-image" >
+        <div class="event-info">
+            <h2>يوم برايل العالمي </h2>
+            <p>NationalDays </p>
+            <div class="event-buttons">
+                <a href="WorldBrailleDay.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+	
+	<div class="event-card"id="event2" data-category="workshops" >
+        <img src="NAIVO-Workshop.jpg" alt="Event Image" class="event-image">
+        <div class="event-info">
+            <h2>Nivio تنظيم الدراسات السابقة و التحليل النوعي بإستخدام   </h2>
+            <p>Workshops </p>
+            <div class="event-buttons">
+                <a href="NvivoEvent.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	
+<div class="event-card"id="event2" data-category="workshops" >
+        <img src="workshop-event01.jpg" alt="Event Image" class="event-image">
+        <div class="event-info">
+            <h2> آلية النشر المصنف للعلوم الإنسانية </h2>
+            <p>Workshops </p>
+            <div class="event-buttons">
+                <a href="Event01.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="event-card"id="event2" data-category="Entertainment" >
+        <img src="Event02.jpg" alt="Event Image" class="event-image">
+        <div class="event-info">
+            <h2>تقديم المرقوق بطريقة حديثة</h2>
+            <p>Entertainment </p>
+            <div class="event-buttons">
+                <a href="Event02.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<div class="event-card"id="event2" data-category="Entertainment" >
+        <img src="Event03.jpg" alt="Event Image" class="event-image">
+        <div class="event-info">
+            <h2>تزيين الكب كيك</h2>
+            <p>Entertainment </p>
+            <div class="event-buttons">
+                <a href="Event03.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+
+       
+
+
+
+<div class="event-card"id="event2" data-category="Entertainment" >
+        <img src="Event04.jpg" alt="Event Image" class="event-image">
+        <div class="event-info">
+            <h2>اللاّنش بوكس كيك</h2>
+            <p>Entertainment </p>
+            <div class="event-buttons">
+                <a href="Event04.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+
+       
+	   
+	   
+<div class="event-card"id="event2" data-category="Entertainment" >
+        <img src="Event05.jpg" alt="Event Image" class="event-image">
+        <div class="event-info">
+            <h2>الحلويات الأوروبية</h2>
+            <p>Entertainment </p>
+            <div class="event-buttons">
+                <a href="Event05.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+
+      	   
+<div class="event-card"id="event2" data-category="National Days" >
+        <img src="Event06.jpg" alt="Event Image" class="event-image">
+        <div class="event-info">
+            <h2>اليوم العلمي للطفل </h2>
+            <p>National Days </p>
+            <div class="event-buttons">
+                <a href="Event6.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+
+       
+
+ 
+
+
+
+
+       
+      
+	
+	</div>
+	 </div>
+<script>
+        function addToFavorites(button) {
+            var eventCard = button.parentNode.parentNode;
+
+            var favoriteEventCard = eventCard.cloneNode(true);
+
+            var favoriteEvents = JSON.parse(localStorage.getItem('favoriteEvents')) || [];
+            favoriteEvents.push(favoriteEventCard.outerHTML);
+            localStorage.setItem('favoriteEvents', JSON.stringify(favoriteEvents));
+        }
+    </script>
+	
+	
+	
+	
+	
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var categoryFilter = document.getElementById("category-filter");
+        var eventCards = document.getElementsByClassName("event-card");
+
+        categoryFilter.addEventListener("change", function() {
+            var selectedCategory = categoryFilter.value;
+
+            for (var i = 0; i < eventCards.length; i++) {
+                var eventCard = eventCards[i];
+                var category = eventCard.getAttribute("data-category");
+
+                if (selectedCategory === "all" || category === selectedCategory) {
+                    eventCard.style.display = "block";
+                } else {
+                    eventCard.style.display = "none";
+                }
+            }
+        });
+    });
+</script>
+	
+	
+	
+    </body>
+
+</html>

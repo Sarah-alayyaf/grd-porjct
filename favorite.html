@@ -1,0 +1,152 @@
+<html>
+    <title>Favourite</title>
+<a href=HomePage.html ><img src="logo.jpeg" alt="logo" class="logo"></a>
+		<link href= "GP.css" rel="stylesheet" type="text/css" />
+
+<head>
+<meta charset="UTF-8">
+
+<style>
+
+      
+    
+   
+
+  
+
+    /* Container styles */
+
+    .example_Help_Trans {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Heading styles */
+
+    h1 {
+        color: #00747F;
+        text-align: center;
+      
+    }
+	.Cards{
+	margin:4px;
+	padding:4px;
+	
+	}
+            .event-card {
+            width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .event-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .event-info {
+            text-align: center;
+        }
+
+        .event-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .event-button {
+            padding: 6px 12px;
+            background-color: #00747f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .event-button:hover {
+            background-color: #808080;
+        }
+		 .remove-button {
+            background-color: #00747f;
+        }
+
+        .remove-button:hover {
+            background-color: #808080;
+        }
+</style>
+</head>
+
+<body>
+<div id="favorite-container"></div>
+
+    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="favorite.html">Favorite</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="contactUs.html">Contact Us </a></li>
+        </ul>
+        <img src="logo.jpeg" class="logo">
+    </nav>
+  </div>
+
+<div class="example_Help_Trans">
+
+<h1 id="h1">Favorite</h1>
+
+<br/><br/><br/>
+
+<p>Here are the events you have favorited:</p>
+    <div class="favorite-events">
+
+ <script>
+        function loadFavoriteEvents() {
+            var favoriteEvents = JSON.parse(localStorage.getItem('favoriteEvents')) || [];
+
+            var favoriteEventsContainer = document.querySelector('.favorite-events');
+
+            favoriteEvents.forEach(function (eventHTML) {
+                var eventCard = document.createElement('div');
+                eventCard.classList.add('favorite-event-card');
+                eventCard.innerHTML = eventHTML;
+
+                var removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.classList.add('event-button', 'remove-button');
+                removeButton.addEventListener('click', function () {
+                    removeFavoriteEvent(eventCard, eventHTML);
+                });
+
+                eventCard.appendChild(removeButton);
+                favoriteEventsContainer.appendChild(eventCard);
+            });
+        }
+
+        function removeFavoriteEvent(eventCard, eventHTML) {
+            var favoriteEventsContainer = document.querySelector('.favorite-events');
+            favoriteEventsContainer.removeChild(eventCard);
+
+            var favoriteEvents = JSON.parse(localStorage.getItem('favoriteEvents')) || [];
+            var updatedFavoriteEvents = favoriteEvents.filter(function (event) {
+                return event !== eventHTML;
+            });
+
+            localStorage.setItem('favoriteEvents', JSON.stringify(updatedFavoriteEvents));
+        }
+
+        loadFavoriteEvents();
+    </script>
+</body>
+
+</html>

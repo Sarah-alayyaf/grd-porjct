@@ -1,0 +1,233 @@
+body {
+    background-color: #fdf8f4;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background: #fdf8f4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    background-color: #fffff4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  nav {
+    background: #fff;
+    border-radius: 70px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    height: 80px;
+  }
+  
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 7px 50px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #343434;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+  }
+  
+  nav ul li::after {
+    content: "";
+    background: rgb(42, 117, 109);
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+  }
+  
+  nav ul li:hover {
+    color: #fff;
+  }
+  
+  nav ul li:hover::after {
+    top: 50%;
+    opacity: 1;
+  }
+  
+  nav ul li ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+  }
+  
+  nav ul li:hover ul.dropdown-menu {
+    display: block;
+  }
+  
+  nav ul li ul.dropdown-menu li {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  nav ul li ul.dropdown-menu li a {
+    color: #343434;
+    text-decoration: none;
+  }
+  
+  nav ul li ul.dropdown-menu li a:hover {
+    color: rgb(42, 117, 109);
+  }
+  
+  .hero {
+    position: relative;
+    background-image: url("hero-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .hero .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(42, 117, 109);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .cta-button:hover {
+    background-color: #808080;
+  }
+  
+  .upcoming-events {
+    padding: 40px;
+    background-color: #ffffff;
+  }
+  
+  .upcoming-events h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+.projects {
+  margin-right: 45px; /* زيادة المسافة من اليمين */
+  margin-left: 45px; /* زيادة المسافة من اليسار */
+}
+
+.event-card {
+  background-color: #f9f9f9;
+  width: 400px; /* زيادة العرض */
+  height: 400px; /* زيادة الارتفاع */
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 5px; /* زيادة البادنغ */
+  margin: 20px; /* زيادة المسافة بين البطاقات */
+  transition: 0.7s;
+  display: inline-block;
+}
+
+.event-card:hover {
+  transform: scale(1.15); /* زيادة مقدار التكبير عند التحويم */
+}
+
+.event-card:hover .event-image {
+  opacity: 0.9;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 1em; /* زيادة التباعد داخل البطاقة */
+}
+ 
+  
+  .event-category {
+    font-size: 0.8em;
+    color: #000016;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .event-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .event-info {
+    text-align: center;
+  }
+  
+  .more-details,
+  .Register,
+  .Volunteering {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .more-details:hover,
+  .Register:hover,
+  .Volunteering:hover {
+    background-color: #808080;
+  }

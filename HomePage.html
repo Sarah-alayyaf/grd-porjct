@@ -1,0 +1,304 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <a href=HomePage.html><img src="logo.jpeg" alt="logo" class="logo"></a>
+    <link href="GP.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .Btn {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background-color: transparent;
+            position: relative;
+            /* overflow: hidden; */
+            border-radius: 7px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .svgContainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            backdrop-filter: blur(0px);
+            letter-spacing: 0.8px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            border: 1px solid rgba(156, 156, 156, 0.466);
+        }
+        
+        .BG {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #181818;
+            z-index: -1;
+            border-radius: 10px;
+            pointer-events: none;
+            transition: all 0.3s;
+        }
+        
+        .Btn:hover .BG {
+            transform: rotate(35deg);
+            transform-origin: bottom;
+        }
+        
+        .Btn:hover .svgContainer {
+            background-color: rgba(156, 156, 156, 0.466);
+            backdrop-filter: blur(4px);
+        }
+        
+        p {
+            display: inline-block;
+        }
+        
+        .Xicon {
+            display: inline-block;
+        }
+        
+        .ArabicDic {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+        
+        .ArabicDic p {
+            font-size: 16px;
+            padding: 0;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            margin-left: 40px;
+            direction: rtl;
+            margin-right: 40px;
+            font-family: 'Almarai', sans-serif;
+        }
+        
+        .ArabicDic img {
+            border-radius: 20%;
+        }
+        
+        footer {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-left {
+            flex: 0.5;
+        }
+        
+        .footer-right {
+            flex: 4;
+            text-align: right;
+        }
+		
+		
+		
+		
+		.Cards{
+	margin:4px;
+	padding:4px;
+	
+	}
+            .event-card {
+            width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .event-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .event-info {
+            text-align: center;
+        }
+
+        .event-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .event-button {
+            padding: 6px 12px;
+            background-color: #00747f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .event-button:hover {
+            background-color: #808080;
+        }
+		
+		
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="HomePage.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Login.html">LogIn</a></li>
+                  
+                        <li><a href="registeration.html">Register</a></li>
+						  </ul>
+                </li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="favorite.html">Favorite</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="Aboutus.html">About</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+            </ul>
+            <img src="logo.jpeg" class="logo">
+        </nav>
+    </div>
+
+
+
+
+
+    <section class="hero">
+        <h1>Welcome to Applied College Events!</h1>
+        <p>Discover and attend exciting events at Applied College.</p><br>
+        <a href="Events.html" class="cta-button">Browse Events</a>
+    </section>
+    <br>
+
+    <body>
+
+
+
+
+
+        <br>
+        <Br>
+
+
+
+        <div class="ArabicDic">
+            <img src="Pnuwhite.png" alt="Pnulogo">
+            <p>
+                تعد أحداث الكلية مناسبات نابضة بالحياة ومثيرة تجمع الطلاب وأعضاء هيئة التدريس والموظفين للاحتفال والتعلم والمشاركة في الأنشطة المختلفة. يتم تخطيط هذه الأحداث وتنظيمها بعناية من قبل إدارة الكلية أو المنظمات الطلابية، بهدف تعزيز الشعور بالمجتمع وتزويد الطلاب
+                بفرص للنمو الشخصي والفكري. أحد الجوانب الرئيسية لأحداث الكلية هو طبيعتها المتنوعة. وهي تشمل مجموعة واسعة من الأنشطة، بما في ذلك المهرجانات الثقافية والمسابقات الرياضية والمؤتمرات الأكاديمية والمعارض الفنية وورش العمل والتجمعات الاجتماعية.
+                تلبي هذه الأحداث مجموعة متنوعة من الاهتمامات والعواطف، مما يضمن وجود شيء يستمتع به الجميع ويشاركون فيه. .تلعب أحداث الكلية دورًا مهمًا في خلق جو حيوي في الحرم الجامعي. إنها بمثابة منصات للطلاب لعرض مواهبهم ومشاركة أفكارهم والمشاركة في
+                محادثات ذات مغزى. غالبًا ما تعرض هذه الأحداث قبل المنظمات الطلابية، مما يسمح للطلاب بالتعبير عن إبداعهم وشغفهم
+            </p>
+        </div>
+        </div>
+
+
+
+
+        <br>
+        <Br>
+        <br>
+        <Br>
+        <br>
+        <Br>
+
+
+
+	<div class = "Cards">
+		
+      <div class="event-card" data-category="national-days" >
+        <img src="FoundationDay-.png" alt="Event Image" class="event-image">
+        <div class="event-info" >
+            <h2>تراثنا هويتنا  </h2>
+            <p>NationalDays </p>
+
+            <div class="event-buttons">
+                <a href="Foundationday-.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+       
+      <div class="event-card" id="event1" data-category="national-days" >
+        <img src="Event1.jpg" alt="Event Image" class="event-image" >
+        <div class="event-info">
+            <h2>يوم برايل العالمي </h2>
+            <p>NationalDays </p>
+            <div class="event-buttons">
+                <a href="WorldBrailleDay.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+	
+	<div class="event-card"id="event2" data-category="workshops" >
+        <img src="NAIVO-Workshop.jpg" alt="Event Image" class="event-image">
+        <div class="event-info">
+            <h2>Nivio تنظيم الدراسات السابقة و التحليل النوعي بإستخدام   </h2>
+            <p>Workshops </p>
+            <div class="event-buttons">
+                <a href="NvivoEvent.html" class="event-button">مزيد من التفاصيل </a>
+                <a href="EventAttendance.html" class="event-button">تسجيل حضور  </a>
+                <a href="volunterringSignUp.html" class="event-button">فرص تطوع </a>
+				 <button class="event-button" onclick="addToFavorites(this); alert('Event added to favorites!');">إضافة إلى المفضلة</button>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+
+
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+
+
+                <footer>
+                    <div class="footer-left">
+                        <p>Follow Us On X for Updates!</p>
+                        <div class="Xicon">
+                            <a href="https://twitter.com/coc_pnu">
+                                <button class="Btn">
+                    <span class="svgContainer">
+                        <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg" class="svgIcon" fill="white">
+                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                        </svg>
+                    </span>
+                    <span class="BG"></span>
+                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <p>© 2024 Applied College Events. All rights reserved.</p>
+                    </div>
+                </footer>
+    </body>
+
+</html>
